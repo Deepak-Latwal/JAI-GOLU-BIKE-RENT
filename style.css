@@ -105,18 +105,13 @@ body {
   transform: translateY(-10px);
 }
 
-/* IMAGE ZOOM EFFECT */
 .card img {
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  object-position: center;
+  height: 350px;          /* controls visible size */
+  object-fit: contain;    /* shows full image */
+  background: #f8fafc;    /* fills empty space */
   display: block;
   transition: transform 0.6s ease;
-}
-
-.card:hover img {
-  transform: scale(1.25);
 }
 
 
